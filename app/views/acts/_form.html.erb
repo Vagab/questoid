@@ -1,0 +1,37 @@
+<%= form_with(model: act) do |form| %>
+  <% if act.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(act.errors.count, "error") %> prohibited this act from being saved:</h2>
+
+      <ul>
+        <% act.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :quest_id, style: "display: block" %>
+    <%= form.text_field :quest_id %>
+  </div>
+
+  <div>
+    <%= form.label :finished, style: "display: block" %>
+    <%= form.check_box :finished %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
