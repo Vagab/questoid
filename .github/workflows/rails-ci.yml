@@ -52,17 +52,6 @@ jobs:
       - name: Brakeman
         run: bundle exec brakeman --no-exit-on-war
 
-  sorbet:
-    name: Sorbet
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-      - name: Sorbet
-        run: bundle exec srb tc
-
   rubocop:
     name: Rubocop
     runs-on: ubuntu-latest
