@@ -62,7 +62,6 @@ group :development, :test do
   gem "rubocop-shopify", require: false
   gem "rubocop-rails", "~> 2.14"
   gem "rubocop-rspec", "~> 2.9"
-  gem "rubocop-sorbet", "~> 0.6"
 
   # Use dotenv for env variables
   gem "dotenv-rails", "~> 2.7"
@@ -70,7 +69,6 @@ group :development, :test do
   gem "simplecov"
   gem "webmock"
   gem "saharspec"
-
 end
 
 group :development do
