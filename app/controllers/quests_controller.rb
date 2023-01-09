@@ -58,13 +58,14 @@ class QuestsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_quest
-      @quest = Quest.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def quest_params
-      params.require(:quest).permit(:title, :description)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_quest
+    @quest = Quest.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def quest_params
+    params.require(:quest).permit(:title, :description)
+  end
 end

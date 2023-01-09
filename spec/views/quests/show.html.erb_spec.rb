@@ -1,10 +1,10 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "quests/show", type: :view do
   before(:each) do
     @quest = assign(:quest, Quest.create!(
       title: "Title",
-      description: "MyText"
+      description: "MyText",
     ))
   end
 

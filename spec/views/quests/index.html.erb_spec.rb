@@ -1,16 +1,16 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "quests/index", type: :view do
   before(:each) do
     assign(:quests, [
       Quest.create!(
         title: "Title",
-        description: "MyText"
+        description: "MyText",
       ),
       Quest.create!(
         title: "Title",
-        description: "MyText"
-      )
+        description: "MyText",
+      ),
     ])
   end
 

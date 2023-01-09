@@ -1,10 +1,10 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "quests/new", type: :view do
   before(:each) do
     assign(:quest, Quest.new(
       title: "MyString",
-      description: "MyText"
+      description: "MyText",
     ))
   end
 
@@ -12,7 +12,6 @@ RSpec.describe "quests/new", type: :view do
     render
 
     assert_select "form[action=?][method=?]", quests_path, "post" do
-
       assert_select "input[name=?]", "quest[title]"
 
       assert_select "textarea[name=?]", "quest[description]"
