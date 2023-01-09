@@ -30,6 +30,8 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 
+gem "devise", "~> 4.8.1"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -51,6 +53,24 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "brakeman", "~> 5.2"
+  gem "ffaker", "~> 2.21"
+  gem "factory_bot_rails", "~> 6.2"
+  gem "rspec", "~> 3.11"
+  gem "rspec-rails", "~> 5.1"
+  gem "rspec-its", "~> 1.3.0"
+  gem "rubocop-shopify", require: false
+  gem "rubocop-rails", "~> 2.14"
+  gem "rubocop-rspec", "~> 2.9"
+  gem "rubocop-sorbet", "~> 0.6"
+
+  # Use dotenv for env variables
+  gem "dotenv-rails", "~> 2.7"
+  gem "timecop", "~> 0.9.5"
+  gem "simplecov"
+  gem "webmock"
+  gem "saharspec"
+
 end
 
 group :development do
