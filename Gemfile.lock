@@ -239,8 +239,6 @@ GEM
       rubocop (~> 1.33)
     rubocop-shopify (2.11.1)
       rubocop (~> 1.42)
-    rubocop-sorbet (0.6.11)
-      rubocop (>= 0.90.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
@@ -300,6 +298,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -322,7 +321,6 @@ DEPENDENCIES
   rubocop-rails (~> 2.14)
   rubocop-rspec (~> 2.9)
   rubocop-shopify
-  rubocop-sorbet (~> 0.6)
   saharspec
   selenium-webdriver
   simplecov
